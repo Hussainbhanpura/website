@@ -4,7 +4,6 @@
     padding: 10vh 5vh;
 }
 .footer img{
-    
     width: 20vh;
     height: 20vh;
 }
@@ -95,3 +94,38 @@
 .footer button:hover{
     color: #fff;
 }
+
+@media (max-width: 768px) {
+   .footer{
+    padding: 8vh 0.8vh;
+    height: 100%;
+    justify-content: space-between;
+   }
+   
+   .footer img{
+    align-items: center;
+    margin-left: 10vh;
+   }
+   .footer p{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 2vh;
+   }
+   .footer h3{
+    margin-left: 1vh;
+    font-size: 1.4rem;
+    background-color: transparent;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+   }
+   .footer a{
+    display: block;
+    margin-left: 2vh;
+    margin-bottom: 1.9vh;
+   }
+   .col-md-3{
+    height: fit-content;
+   }
+  }
+

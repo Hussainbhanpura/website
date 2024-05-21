@@ -15,14 +15,15 @@ const Footer = () => {
             region with over 20 years of experience in the industry.
           </p>
         </Col>
-        <Col md={3}>
+        <div className='col-md-3'>
           <h3>Useful Links</h3>
           <a href=''>Home</a>
           <a href=''>About</a>
           <a href=''>Products</a>
           <a href=''>Services</a>
           <a href=''>Contact</a>
-        </Col>
+        </div>
+
         <Col md={3}>
           <h3>Head Office</h3>
           <div className='location-info'>
