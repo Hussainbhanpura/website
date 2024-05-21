@@ -13,7 +13,6 @@ const Homepage = () => {
   return (
     <div>
       <WhatsappIcon />
-      <Navbar />
       <Carousel />
       <Section1 />
       <BrandCarousel />

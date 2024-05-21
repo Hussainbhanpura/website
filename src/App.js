@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import HomePage from './components/Homepage';
+import DefaultLayout from './components/DefaultLayout';
 
 
 const App = () =>  {
@@ -15,7 +16,9 @@ const App = () =>  {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <Route path="/" element={<DefaultLayout/>}>
+      <Route index element={<HomePage/>} />
+      </Route>
       </Routes>
     </Router>
   );

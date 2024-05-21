@@ -1,0 +1,97 @@
+.footer{
+    margin-top: 10vh;
+    background-color: #393939;
+    padding: 10vh 5vh;
+}
+.footer img{
+    
+    width: 20vh;
+    height: 20vh;
+}
+.footer p{
+    width: 75%;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+.footer h3{
+    font-family: Jost, sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.footer a{
+    position: relative;
+     overflow: hidden; /* Ensures the line doesn't extend outside the link */
+  display: inline-block; /* Ensures the width is only as wide as the content */
+    font-size: 1rem;
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    justify-content: space-around;
+}
+.footer a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the blue line */
+    background-color: #10cff4; /* Blue color */
+    transition: width 0.3s ease-in-out; /* Smooth transition for the width */
+  }
+  .footer a:hover::before {
+    width: 100%; /* Full width on hover */
+  }
+  .footer a:hover{
+    color: #10cff4;
+  }
+
+  .footer i {
+    color: #10cff4; /* Default color of the icon */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+  }
+  .location-info:hover  i, .contact-info:hover  i, .contact-info2:hover  i, .email-info:hover  i{
+    color: #10f464;
+  }
+
+  .footer p:hover{
+    color: #10cff4;
+  }
+.location-info, .contact-info, .contact-info2,.email-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ .contact-info2, .email-info{
+   margin-top: 2vh;
+}
+.footer i{
+    font-size: 1rem;
+}
+.footer input{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #979697;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1vh;
+    width: 20vh;
+}
+.footer button{
+    background-color: #393939;
+    color: #10cff4;
+    border: none;
+}
+.footer button:hover{
+    color: #fff;
+}
