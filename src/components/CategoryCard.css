@@ -1,0 +1,73 @@
+body{
+    background-color: #fff;
+}
+
+.category-card-container {
+    height: 60vh;
+    margin-top: 2vh;
+    margin-bottom: 40vh;
+  }
+
+  /* Style for the image container */
+  .image-container {
+    z-index: 1;
+    position: relative; /* Set relative positioning here */
+    width: 100%; /* Ensure the container takes the full width of its parent */
+    height: 70vh; /* Adjust the height as needed */
+    overflow: hidden; /* Ensures no part of the image overflows the container */
+    margin-bottom: 0;
+    transition: filter 0.5s ease;
+  }
+
+  .image-container:hover {
+  filter: brightness(120%); /* Increase brightness by 20% on hover */
+  transform: scale(1.05);
+}
+
+  /* Style for the image */
+  .category-image {
+    position: relative;
+    object-fit: contain; /* This will ensure the image is scaled to be as large as possible while seeing the entire image and maintaining its aspect ratio */
+    width: 100%;
+    height: 80vh;
+    display: block;
+    align-items: center;
+    
+  }
+  
+  /* Style for the title */
+  .category-title {
+    position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
+    bottom: 10vh; /* Position from the bottom of the image container */    
+    left: 50%; /* Center the title horizontally relative to its parent */
+    transform: translateX(-50%); /* Adjust the position to truly center it */
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Assuming a dark image, white text will stand out */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    width: fit-content;
+    font-family: Jost, Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+  }
+.category-description{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .category-card-container{
+    margin-top: -15vh;
+    margin-bottom: 20vh;
+  }
+  .category-description{
+    position: relative;
+    z-index: 2;
+    bottom: 8vh;
+  }
+}
+

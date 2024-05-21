@@ -1,0 +1,174 @@
+.carousel-item {
+    position: relative;
+    margin-top: 20vh;
+  }
+
+  .text-content {
+    position: absolute;
+    left: 0; /* Align to the left edge of the content wrapper */
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%); /* Offset the y-position to truly center */
+    padding-left: 5rem; /* Space from the left edge */
+    max-width: 100%;
+  }
+
+/* Custom styles for carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* Remove default images */
+  margin-top: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  width: 50px; /* Width of the custom arrow */
+  height: 50px; /* Height of the custom arrow */
+  background-color: transparent; /* Ensure no background color */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: ''; /* Clear any existing content */
+  display: block;
+  border: solid #10cff4; /* Set arrow color */
+  border-width:0 4px 4px 0; /* Adjust border width to form arrow */
+  padding: 6px; /* Padding around the arrow */
+}
+
+.carousel-control-prev-icon::before {
+  transform: rotate(135deg); /* Rotate for left arrow */
+  -webkit-transform: rotate(135deg); /* Rotate for left arrow for Safari */
+}
+
+.carousel-control-next-icon::before {
+  transform: rotate(-45deg); /* Rotate for right arrow */
+  -webkit-transform: rotate(-45deg); /* Rotate for right arrow for Safari */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+  top: 50%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    background: none; /* Remove any background styles */
+    border: none; /* Remove any borders */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Full viewport height carousel */
+#carouselExampleControls {
+    margin-top: 100px;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel-inner,
+  .carousel-item {
+    height: 100vh;
+    object-fit: cover; /* Ensures images cover the area without distorting aspect ratio */
+  }
+
+  .carousel-item img {
+    height: 60vh;
+    object-fit: contain;
+  }
+  
+  /* Centering the carousel controls vertically */
+  .carousel-control-prev {
+    left: 10px; /* Space from the left edge */
+  }
+  
+  .carousel-control-next {
+    right: 10px; /* Space from the right edge */
+  }
+  h3 {
+    font-family: 'Raleway'; /* Set the font family to Raleway */
+    font-weight: 500; /* Set the font weight to bold (700) */
+    font-size: 4vw; /* Set the font size to 62 pixels */
+    line-height: 6vw; /* Set the line height to 93 pixels */
+    color: #0fcef5; /* Set the text color to a specific cyan shade */
+  }
+
+  p {
+  font-family: 'Raleway'; /* Set the font family to Raleway */
+  font-weight: 500; /* Set the font weight to bold (700) */
+  font-size: 4.5vw; /* Set the font size to 68 pixels */
+  line-height: 4.5vw; /* Set the line height to 68 pixels, making it equal to the font size */
+  color: #000000; /* Set the text color to black */
+}
+
+.small p{
+    font-family: 'Raleway'; /* Set the font family to Raleway */
+  font-weight: 400; /* Set the font weight to bold (700) */
+  font-size: 2vw; /* Set the font size to 68 pixels */
+  line-height: 2vw; /* Set the line height to 68 pixels, making it equal to the font size */
+  color: #000000; 
+}
+
+.carousel-indicators-custom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* Hide by default */
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators-custom .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.carousel-indicators-custom .dot.active {
+  background-color: #1f81f8;
+}
+
+@media screen and (max-width: 768px) {
+  .text-content {
+    padding-left: 1rem; /* Space from the left edge */
+    z-index: 1;
+    
+  }
+  .carousel-item{
+    margin-top: 0vh;
+  }
+  h3{
+    background: rgba(255,255,255,.5);
+    border: 0 solid rgba(0, 0, 0, 1);
+    opacity: 1;
+    color: #000000;
+    font-size: 8vw; /* Set the font size to 62 pixels */
+    line-height: 10vw; /* Set the line height to 93 pixels */
+  }
+  p{
+    font-size: 4vw; /* Set the font size to 68 pixels */
+  line-height: 4vw; /* Set the line height to 68 pixels, making it equal to the font size */
+  }
+  .small p{
+    font-size: 3vw; /* Set the font size to 68 pixels */
+    line-height: 3vw; /* Set the line height to 68 pixels, making it equal to the font size */
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  opacity: 0;
+}
+.carousel-indicators-custom {
+  display: flex; /* Show on mobile devices */
+}
+.carousel-item img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 2.5;
+
+}
+}

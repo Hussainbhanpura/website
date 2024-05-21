@@ -1,0 +1,89 @@
+/* Style for the container that holds the text and the slider */
+.container2 {
+  position: relative;
+    margin-top: 10vh; /* Adjust the top margin as needed */
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+
+  .container2 p{
+    font-family: Jost, Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  
+  /* Style for the horizontal rule */
+  .hr-styled2 {
+    border: 0; /* Remove default border */
+    height: 2px; /* Set the height of the line */
+    background-color: #FF6347; /* Tomato color, change as needed */
+    margin: 20px 0; /* Space above and below the hr */
+  }
+  
+   .brand-image2{
+    width: 300px; /* Ensure each image fills its container */
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: contain; /* Ensure images cover the area without distortion */
+    display: block; /* Remove bottom space typical of inline elements */
+    margin: 0 auto; 
+  }
+.brand-carousel2{
+ 
+    margin: 0 5vh;
+}
+
+.brand-carousel2 p {
+    font-family: Jost, Poppins, sans-serif;
+    color: #555555; /* Slightly lighter gray for less emphasis */
+    font-weight: 400;
+    font-size: 16px; /* Smaller font size for subtler appearance */
+    padding: 0 20px; /* Padding on the sides to maintain layout within carousel items */ /* Uppercase text for stylistic choice */
+   text-align: center;
+  }
+  .brand-carousel2 i{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are above other content */
+    top: 1.2vw;
+    right: 6vw;
+    color: #777777;
+    font-size: 2vw;
+  }
+  .brand-carousel2 i:hover{
+    color: #FF6347;
+  }
+  .fa-arrow-left-long{
+    width: 3vw;
+    right: 8vw !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .brand-carousel2{
+      margin: 0;
+  }
+  
+    .container2{
+      margin-top: 10vh;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .brand-image2{
+      width: 200px;
+      height: 200px;
+    }
+    .container2 p{
+      font-size: 8vw;
+      margin-left: 2vh;
+    }
+    .brand-carousel2 p{
+      font-size: 3vw;
+      width: 100%;
+      overflow: hidden;
+    }
+    .brand-carousel2 i{
+      display: none;
+    }
+  }
+

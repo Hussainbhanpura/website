@@ -1,0 +1,38 @@
+.heading {
+    font-family: Jost;
+    font-size: 48px;
+    font-weight: 400;
+    color: #232425;
+    line-height: 58px;
+    letter-spacing: 3px;
+    margin-top: 10vh;
+    background-color: #fff;
+  }
+  
+  .text{
+      font-family: Poppins, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      color: #555555;
+      margin: 0 20vh;
+      background-color: #fff;
+      margin-bottom: 5vh;
+  }
+  
+  .categories{
+    display: flex;
+    margin: 2vh 10vh;
+  }
+@media screen and (max-width: 768px) {
+  .categories{
+    margin-top: 100vh;
+    margin: 0;
+    margin-bottom: 20vh;
+  }
+  .text{
+    margin: 4vw 5vw;
+    font-size: 4vw;
+    text-align: left;
+  }
+}

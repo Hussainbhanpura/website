@@ -1,0 +1,32 @@
+i{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #0fcef5;
+  }
+  .icon{
+    width: 60px;
+    height: 60px;
+  }
+  .service-heading{
+    font-family: Jost, Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #232425;
+    margin: 10px 0;
+  }
+  .service-description{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .service-quote{
+    font-family: Jost, Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    color: #232425;
+  }
