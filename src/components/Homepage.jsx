@@ -8,6 +8,7 @@ import Categories from "./Categories";
 import Service from "./Service";
 import Section1 from "./Section1";
 import WhatsappIcon from "./WhatsappIcon";
+import Map from "./Map";
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
       <Categories />
       <ProductCarousel />
       <Service />
+      <Map />
     </div>
   );
 };
